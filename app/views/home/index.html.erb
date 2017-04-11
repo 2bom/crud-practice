@@ -4,4 +4,5 @@
     <p>제목: <a href="/home/show/<%= post.id %>"><%= post.title %></a></p>
     <p>시간: <%= post.created_at %></p>
     <a href="home/edit/<%= post.id%>">[수정]</a>
+    <a href="home/delete/<%= post.id%>">[삭제]</a>
 <% end %>

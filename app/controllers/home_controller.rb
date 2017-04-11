@@ -28,4 +28,8 @@ class HomeController < ApplicationController
         one_post.save
     end
     
+    def delete
+        Post.find(params[:post_id]).destroy
+    end
+    
 end
