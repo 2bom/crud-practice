@@ -8,4 +8,12 @@ class HomeController < ApplicationController
     
     def new
     end
+    
+    def index
+        @posts = Post.all
+    end
+    
+    def show
+        @one_post = Post.find(params[:yo_id])
+    end
 end
