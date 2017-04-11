@@ -3,4 +3,5 @@
 <% @posts.each do |post| %>
     <p>제목: <a href="/home/show/<%= post.id %>"><%= post.title %></a></p>
     <p>시간: <%= post.created_at %></p>
+    <a href="home/edit/<%= post.id%>">[수정]</a>
 <% end %>

@@ -1,0 +1,12 @@
+<h1>글 수정</h1>
+
+
+<form action="/home/update/<%= @one_post.id %>" method="POST">
+    <label for="title">제목 : </label>
+    <input type="text" name="title" value="<%= @one_post.title %>">
+
+    <label for="title">내용 : </label>
+    <textarea name="content"><%= @one_post.content %></textarea>
+    
+    <input type="submit" value="수정">
+</form>
