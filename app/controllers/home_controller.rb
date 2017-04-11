@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
     def create
-        @title = params[:title]
-        @content = params[:content]
+        post = Post.new
+        post.title = params[:title]
+        post.content = params[:content]
+        post.save
     end
     
     def new
